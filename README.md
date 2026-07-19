@@ -98,12 +98,12 @@ Executar em modo visual:
 npx playwright test --headed
 ```
 
-## Observações
-
-Este projeto foi desenvolvido com foco em legibilidade, reutilização de código e facilidade de manutenção, seguindo boas práticas de automação de testes com Playwright.
-
 Abrir o relatório:
 
 ```bash
+
+## Observações
+
+Este projeto foi desenvolvido com foco em legibilidade, reutilização de código e facilidade de manutenção, seguindo boas práticas de automação de testes com Playwright.
 npx playwright show-report
 ```
