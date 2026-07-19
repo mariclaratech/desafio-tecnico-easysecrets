@@ -101,9 +101,9 @@ npx playwright test --headed
 Abrir o relatório:
 
 ```bash
+npx playwright show-report
+```
 
 ## Observações
 
 Este projeto foi desenvolvido com foco em legibilidade, reutilização de código e facilidade de manutenção, seguindo boas práticas de automação de testes com Playwright.
-npx playwright show-report
-```
