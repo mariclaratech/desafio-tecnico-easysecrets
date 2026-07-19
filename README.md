@@ -13,22 +13,33 @@ Este projeto foi desenvolvido como parte do processo seletivo para a vaga de QA,
 ## Estrutura do projeto
 
 ```text
-pages/
-tests/
-utils/
+.
+├── pages/
+├── tests/
+├── utils/
+├── playwright.config.ts
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── README.md
+└── .gitignore
 ```
 
-- **pages:** implementação do padrão Page Object Model (POM), concentrando os elementos e ações de cada página.
-- **tests:** contém os cenários automatizados.
-- **utils:** funções reutilizáveis, como geração dinâmica de usuários.
-- **playwright.config.ts:** configuração do Playwright.
+### Organização
+
+- **pages/**: implementação do padrão **Page Object Model (POM)**, concentrando os elementos e ações de cada página.
+- **tests/**: contém os cenários automatizados.
+- **utils/**: funções auxiliares reutilizáveis, como geração dinâmica de usuários.
+- **playwright.config.ts**: configurações do Playwright, como browsers, reporter e demais opções de execução.
+- **package.json**: gerenciamento das dependências e scripts do projeto.
+- **tsconfig.json**: configuração do compilador TypeScript.
 
 ## Decisões técnicas
 
 Durante o desenvolvimento foram adotadas algumas práticas visando organização, manutenção e reutilização do código.
 
 - Utilização do padrão **Page Object Model (POM)** para separar a lógica da interface da lógica dos testes.
-- Organização do projeto em camadas, facilitando manutenção e escalabilidade.
+- Organização do projeto em pastas (Page Objects, testes e utilitários), separando responsabilidades e facilitando manutenção e reutilização.
 - Utilização de **Locators** do Playwright, evitando seletores frágeis.
 - Uso de **test.step()**, proporcionando relatórios HTML mais claros e organizados.
 - Geração dinâmica de usuários para evitar conflitos entre execuções.
@@ -86,6 +97,10 @@ Executar em modo visual:
 ```bash
 npx playwright test --headed
 ```
+
+## Observações
+
+Este projeto foi desenvolvido com foco em legibilidade, reutilização de código e facilidade de manutenção, seguindo boas práticas de automação de testes com Playwright.
 
 Abrir o relatório:
 
